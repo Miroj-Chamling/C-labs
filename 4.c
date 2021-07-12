@@ -42,16 +42,20 @@ for(i=0;i<=n;i++)
         {
 
             temp = info[i].ar;
-            temp1 = info[i].age;
-            temp2 = info[i].mp;
-            strcpy(chtemp,info[i].name);
             info[i].ar = info[j].ar;
-            info[i].age = info[j].age;
-            info[i].mp = info[j].mp;
-            strcpy(info[i].name,info[j].name);
             info[j].ar = temp;
+
+            temp1 = info[i].age;
+            info[i].age = info[j].age;
             info[j].age= temp1;
+
+            temp2 = info[i].mp;
+            info[i].mp = info[j].mp;
             info[j].mp = temp2;
+
+
+            strcpy(chtemp,info[i].name);
+            strcpy(info[i].name,info[j].name);
             strcpy(info[j].name,chtemp);
 
         }
