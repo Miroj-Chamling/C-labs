@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 struct student{
-    char name[50], department[50], course[50];
+    char name[100], department[50], course[50];
     int roll, dj;
 };
 
