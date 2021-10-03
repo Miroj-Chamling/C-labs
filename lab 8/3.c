@@ -1,3 +1,4 @@
+//count the searched character in the string
 #include <string.h>
 
 void main()
