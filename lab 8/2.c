@@ -1,3 +1,5 @@
+//count the length of the string
+
 #include<stdio.h>
 
 void main()
