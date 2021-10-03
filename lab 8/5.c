@@ -1,3 +1,4 @@
+//sorting the strings in alphabetical order
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
