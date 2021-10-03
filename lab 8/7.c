@@ -4,8 +4,8 @@
 
 void main()
 {
-    char str[100], str1[100];
-    int i, count = 0,j, tmp;
+    char str[100], str1[100], tmp[100];
+    int i, count = 0,j;
 
     printf("enter the string: ");
     gets(str);
@@ -17,15 +17,22 @@ void main()
             count++;
         }
     }
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        if(str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O'||str[i]=='U'||str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'|str[i]=='u')
+        {
+            str[i] = ' ';
+        }
+    }
     for(i=0; str[i] != '\0' ; i++)
     {
         for(j= i +1; str[j] != '\0' ; j++)
         {
-           if(str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O'||str[i]=='U'||str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'|str[i]=='u')
+           if(str[i]== ' ')
             {
-                tmp = str[i];
+                tmp[i] = str[i];
                 str[i] = str[j];
-                str[j] = tmp;
+                str[j] = tmp[i];
             }
         }
     }
