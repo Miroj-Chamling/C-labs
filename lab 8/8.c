@@ -1,3 +1,5 @@
+//taking the name of individual and turn it into abveration except the last name
+
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
