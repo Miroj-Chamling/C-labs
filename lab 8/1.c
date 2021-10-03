@@ -1,4 +1,4 @@
-
+//wap to check palindrome or not
 #include<stdio.h>
 #include<string.h>
 
