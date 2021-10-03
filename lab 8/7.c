@@ -1,3 +1,4 @@
+//count the vowel in the string and remove it
 #include<stdio.h>
 #include<string.h>
 
