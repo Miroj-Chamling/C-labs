@@ -1,3 +1,4 @@
+//fabonicci series
 #include<stdio.h>
 #include<conio.h>
 
