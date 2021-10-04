@@ -17,7 +17,7 @@ int main()
     }
     for(int i =0; i<n; i++)
     {
-        printf("%d \t", *result);
+        printf("memory[%u] = %d \t",result, *result);
         result+= 1;
     }
 }
